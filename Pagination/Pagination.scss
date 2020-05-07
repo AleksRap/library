@@ -1,0 +1,48 @@
+.pagination {
+  display:flex;
+  align-items:center;
+
+  padding: 5px;
+  background: white;
+  border: 1px solid lightgray;
+
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: rgba(0, 0, 0, .5);
+
+  & > * {
+    cursor: pointer;
+    margin-right: 3px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__arrow {
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, .08);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .4);
+    }
+  }
+
+  &__item {
+    padding: 5px 10px;
+    background-color: lightgray;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, .4);
+    }
+
+    &.active {
+      background-color: lightblue;
+      color: white;
+    }
+  }
+
+  &__dots {
+    padding: 5px;
+  }
+}
