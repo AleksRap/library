@@ -5,7 +5,7 @@
 ## Api
 ***Важно:*** ManagementEvents требуется массив для хранения событий.
 
-#### ManagementEvents.addEventToArr(data)
+#### ManagementEvents.addEvent(data)
 Принимает на входе объект со следующими ключами
 
     {

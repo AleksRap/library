@@ -9,7 +9,7 @@ class ManagementEvents {
    * fn    - анонимная функция без вызова
    * @param data
    */
-  static addEventToArr(data) {
+  static addEvent(data) {
     /** Добавляем событие в массив */
     data.arr.push({el: data.el, event: data.event, fn: data.fn});
 
