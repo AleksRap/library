@@ -1,0 +1,70 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.body {
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+
+  width: 100vw;
+  height: 100vh;
+
+  @include flexbox;
+
+  overflow: auto;
+
+  background: rgba(43, 43, 43, .7);
+}
+
+.modal {
+  position: relative;
+
+  width: auto;
+  max-width: 1200px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 22px 30px 50px;
+
+  background-color: $color-basic-100;
+  border: 1px solid $color-basic-200;
+  border-radius: 10px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.header {
+  width: 100%;
+  @include flexbox(center, space-between);
+
+  margin-bottom: 17px;
+
+  &.withTitle {
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgba(184, 182, 197, .3);
+  }
+}
+
+.title {
+  margin-right: 20px;
+}
+
+.btnClose {
+  position: absolute;
+  top: 27px;
+  right: 35px;
+
+  outline: none;
+}
+
+.iconClose {
+  font-size: 18px;
+  color: $color-basic-900;
+}

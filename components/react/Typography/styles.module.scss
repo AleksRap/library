@@ -1,0 +1,135 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.h1 {
+  font-size: 72px;
+}
+
+.h2 {
+  font-size: 36px;
+}
+
+.h3 {
+  font-size: 30px;
+}
+
+.h4 {
+  font-size: 20px;
+}
+
+.h5 {
+  font-size: 18px;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.text {
+  &.small {
+    font-size: 12px;
+  }
+  &.middle {
+    font-size: 14px;
+  }
+  &.normal {
+    font-size: 16px;
+  }
+  &.big {
+    font-size: 18px;
+  }
+  &.major {
+    font-size: 20px;
+  }
+  &.large {
+    font-size: 36px;
+  }
+  &.huge {
+    font-size: 72px;
+  }
+
+  &.normalWeight {
+    font-weight: 400;
+  }
+  &.mediumWeight {
+    font-weight: 600;
+  }
+  &.boldWeight {
+    font-weight: 700;
+  }
+}
+
+.fourth {
+  color: $color-fourth;
+}
+
+.fifth {
+  color: $color-fifth;
+}
+
+.error {
+  color: $color-error;
+  &-900 {
+    color: $color-error-900;
+  }
+}
+
+.primary {
+  color: $color-primary;
+  &-900 {
+    color: $color-primary-900;
+  }
+}
+
+.secondary {
+  color: $color-secondary;
+  &-900 {
+    color: $color-secondary-900;
+  }
+  &-700 {
+    color: $color-secondary-700;
+  }
+}
+
+.third {
+  color: $color-third;
+  &-900 {
+    color: $color-third-900;
+  }
+}
+
+.basic {
+  color: $color-basic;
+  &-900 {
+    color: $color-basic-900;
+  }
+  &-800 {
+    color: $color-basic-800;
+  }
+  &-700 {
+    color: $color-basic-700;
+  }
+  &-500 {
+    color: $color-basic-500;
+  }
+  &-300 {
+    color: $color-basic-300;
+  }
+  &-250 {
+    color: $color-basic-250;
+  }
+  &-200 {
+    color: $color-basic-200;
+  }
+  &-100 {
+    color: $color-basic-100;
+  }
+}

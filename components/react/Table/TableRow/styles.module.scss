@@ -1,0 +1,33 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.row {
+  &:last-child {
+    .cell {
+      border-bottom: $border-table;
+      &:first-child {
+        border-bottom-left-radius: 10px;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}
+
+.cell {
+  position: relative;
+  padding: 20px 15px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: #fff;
+  border: {
+    top: $border-table;
+    left: $border-table;
+  };
+
+  &:last-child {
+    border-right: $border-table;
+  }
+}

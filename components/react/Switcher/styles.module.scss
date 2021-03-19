@@ -1,0 +1,76 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.wrap {
+  @include flexbox(center, flex-start);
+}
+
+.switcher {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+
+  border-radius: 40px;
+  background-color: $color-basic-700;
+
+  transition: all $transition-time ease-in;
+
+  &.normal {
+    width: 50px;
+    height: 28px;
+  }
+
+  &.small {
+    width: 30px;
+    height: 18px;
+  }
+
+  &.active {
+    background-color: $color-primary;
+    transition: all $transition-time ease-in;
+  }
+}
+
+$circle-width: 24px;
+$circle-width-small: 14px;
+
+.circle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2px;
+  margin: auto 0;
+
+  display: block;
+
+  background-color: $color-basic-100;
+  border-radius: 100%;
+
+  transition: all $transition-time ease-in;
+
+  &.normal {
+    width: $circle-width;
+    height: $circle-width;
+  }
+
+  &.small {
+    width: $circle-width-small;
+    height: $circle-width-small;
+  }
+
+  &.active {
+    transition: all $transition-time ease-in;
+
+    &.normal {
+      left: calc(100% - #{$circle-width} - 2px);
+    }
+
+    &.small {
+      left: calc(100% - #{$circle-width-small} - 2px);
+    }
+  }
+}
+
+.label {
+  margin-left: 8px;
+}

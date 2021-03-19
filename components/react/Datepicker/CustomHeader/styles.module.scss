@@ -1,0 +1,113 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+.year {
+  @include flexbox(center, flex-start);
+  margin-bottom: 20px;
+}
+
+.btnYear {
+  outline: none;
+
+  &.disabled {
+    pointer-events: none;
+  }
+
+  &.prev {
+    padding: 12px;
+  }
+
+  &.next {
+    padding: 12px;
+  }
+}
+
+$widthArrowYear: 16px;
+
+html {
+  .iconYear::before {
+    width: $widthArrowYear;
+    line-height: $widthArrowYear;
+  }
+}
+
+.iconYear {
+  @include flexbox;
+
+  font-size: 8px;
+  color: $color-basic-900;
+
+  &.disabled {
+    color: $color-basic-200;
+  }
+
+  &.prev {
+    transform: rotate(90deg);
+  }
+
+  &.next {
+    transform: rotate(-90deg);
+  }
+}
+
+.btnClose {
+  outline: none;
+
+  margin-left: auto;
+  padding: 10px;
+}
+
+.iconClose {
+  @include flexbox;
+
+  color: $color-basic-700;
+  font-size: 12px;
+}
+
+.month {
+  @include flexbox(center, space-between);
+  margin-bottom: 10px;
+}
+
+.monthText {
+  display: inline-block;
+
+  margin-right: auto;
+  padding-left: 10px;
+}
+
+.tool {
+  outline: none;
+
+  width: 26px;
+  height: 26px;
+
+  @include flexbox;
+  padding: 5px;
+
+  border: 1px solid $color-secondary;
+  border-radius: 3px;
+
+  &:last-child {
+    margin-left: 6px;
+    margin-right: 10px;
+  }
+
+  &.disabled {
+    pointer-events: none;
+    border-color: $color-basic-200;
+  }
+}
+
+.iconArrow {
+  font-size: 10px;
+  color: $color-secondary;
+
+  &.disabled {
+    color: $color-basic-200;
+  }
+
+  &.left {
+    transform: rotate(180deg);
+  }
+}

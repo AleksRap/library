@@ -1,0 +1,13 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.arrow {
+  width: 12px;
+  height: 13px;
+
+  margin-top: -1px;
+
+  &.left {
+    transform: rotate(180deg);
+  }
+}

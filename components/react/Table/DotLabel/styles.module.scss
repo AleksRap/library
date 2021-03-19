@@ -1,0 +1,21 @@
+@import '../../../assets/styles/variables';
+@import '../../../assets/styles/mixins';
+
+.dot {
+  @include paginationItem;
+}
+
+.dotWrap {
+  pointer-events: none;
+}
+
+.dot {
+  @include flexbox;
+
+  border-radius: 3px;
+  border: $border-table;
+  background-color: $color-basic-100;
+
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -1,0 +1,53 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.datepicker {
+  @include flexbox(flex-end, flex-start);
+  flex-direction: column;
+}
+
+.icon {
+  margin-right: 18px;
+  color: $color-basic-900;
+}
+
+.input {
+  @include flexbox(center, flex-start);
+
+  padding: 12px 20px;
+
+  border-radius: 10px;
+  border: 1px solid $color-basic-200;
+  background-color: $color-basic-100;
+
+  &.error {
+    border-color: $color-error;
+  }
+}
+
+.inputDate {
+  cursor: pointer;
+  max-width: 93px;
+
+  border: none;
+  outline: none;
+
+  &.end {
+    text-align: right;
+  }
+}
+
+.textError {
+  display: inline-block;
+
+  margin-top: 3px;
+
+  font-size: 10px;
+  color: $color-error;
+}
+
+html {
+  .calendar {
+    margin-top: -15px;
+  }
+}

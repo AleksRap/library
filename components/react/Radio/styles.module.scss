@@ -1,0 +1,33 @@
+@import '../../assets/styles/mixins';
+@import '../../assets/styles/variables';
+
+.circle {
+  cursor: pointer;
+  @include flexbox;
+
+  width: 14px;
+  height: 14px;
+
+  border: 1px solid $color-primary-900;
+  background-color: $color-basic-300;
+  border-radius: 100%;
+
+  &.disabled {
+    pointer-events: none;
+    opacity: .6;
+  }
+}
+
+.dot {
+  display: none;
+
+  width: 6px;
+  height: 6px;
+
+  background-color: $color-primary;
+  border-radius: 100%;
+}
+
+.input:checked + .circle .dot {
+  display: block;
+}

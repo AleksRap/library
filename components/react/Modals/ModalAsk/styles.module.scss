@@ -1,0 +1,26 @@
+@import '../../../assets/styles/mixins';
+@import '../../../assets/styles/variables';
+
+:root .modal {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 27px 70px 60px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.btnsModal {
+  margin-top: 30px;
+  @include flexbox(center, space-between);
+}
+
+.btnModal {
+  width: 100%;
+
+  &:first-child {
+    margin-right: 16px;
+  }
+}
